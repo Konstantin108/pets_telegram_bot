@@ -1,0 +1,12 @@
+1) choco install ngrok -y
+
+2) ngrok config add-authtoken <токен ngrok>
+
+3) ngrok http --host-header=<локальный домен>/ 80
+
+
+Регистрация вебхука Телеграмм:
+https://api.telegram.org/bot<токен бота>/setWebhook?url=<внешний домен>/<путь>/<код бота>
+
+Пример:
+https://api.telegram.org/bot5803758528:AAEZEyKgj5S-p-UcOBhOSOvriYpg0K1tEss/setWebhook?url=https://d541-5-228-230-179.eu.ngrok.io/index.php
